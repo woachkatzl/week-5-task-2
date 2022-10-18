@@ -7,13 +7,15 @@ body {
 
 .header,
 .main,
-.footer,
 .main-section,
 .aside,
 .main-section section,
-.footer section,
 .container {
     display: flex;
+}
+
+.footer {
+    display: grid;
 }
 
 .main,
@@ -68,6 +70,7 @@ body {
 }
 
 .footer {
+    grid-template-columns: repeat(4, 21%);
     min-height: 12vh;
     align-items: center;
     justify-content: space-around;
@@ -75,8 +78,7 @@ body {
 
 .footer section {
     min-height: 5vh;
-    min-width: 21%;
-    justify-content: center;
+    text-align: center;
     background-color: #FFFFFF;
 }
 
